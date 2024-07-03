@@ -1,0 +1,119 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Menú horizontal */
+.navbar {
+    background-color: #333;
+    overflow: visible; /* Asegura que el contenido no oculta el menú */
+    position: sticky; /* Mantiene el menú en la parte superior */
+    top: 0; /* Ancla el menú a la parte superior */
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex: 1;
+}
+
+/* Menú lateral */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Contenido principal */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+#game {
+    text-align: center;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #e6e1e1;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+.styled-image {
+    width: 900px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: 2px solid #333; /* Agrega un borde verde */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+h2 {
+    font-size: 50px;
+    align-content: center;
+    text-align: center;
+    
+}
