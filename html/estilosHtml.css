@@ -44,6 +44,10 @@ nav a:hover {
     overflow-y: auto;
 }
 
+#menu::-webkit-scrollbar {
+    display: none; /* Oculta el scrollbar en navegadores WebKit */
+}
+
 #menu a {
     display: block;
     color: #333;
@@ -65,9 +69,50 @@ nav a:hover {
     overflow: auto;
 }
 
+.content::-webkit-scrollbar {
+    display: none; /* Oculta el scrollbar en navegadores WebKit */
+}
+
 footer {
     background-color: #e6e1e1;
     color: #333;
     text-align: center;
     padding: 50px;
 }
+.imagen1, .imagen2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    max-height: 300px;
+    border: 3px solid #0f0f0f;
+    border-radius: 5px;
+  }
+  .imagen2 {
+    margin: 10px 0; /* quitar el margen horizontal para no centrar */
+  }
+.tabla1 {
+    width: 100%;
+    border: 3px solid black;
+    border-collapse: collapse;
+  }
+  .tabla1 th, .tabla1 td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  .tabla1 th {
+    background-color: #f2f2f2; /* gris claro */
+  }
+  .tabla1 tbody tr:nth-child(even) {
+    background-color: #ffffff; /* blanco para filas pares */
+  }
+  .tabla1 tbody tr:nth-child(odd) {
+    background-color: #e0e0e0; /* gris para filas impares */
+  }
+  .notas {
+    width: 100%;
+    background-color: #f0b64a; /* fondo tomate claro */
+    padding: 10px;
+    box-sizing: border-box; /* incluir padding en el ancho total */
+  }
